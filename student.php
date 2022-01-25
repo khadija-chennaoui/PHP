@@ -10,98 +10,72 @@
     <title>Page-3</title>
 </head>
 <body>
-    
-    <div class=" container-fluid bg-light" > 
+  <div class=" container-fluid bg-light" > 
     <div class="row flex-nowrap">
               <?php 
                   include('sidebar.php');
                 ?>
           </div>
-          <div class="col-9 container " >
+        <div class="col-9 container" >
                   <?php 
                     include('header.php');
                   ?>
-        
-                  <div class="row  ">
-                    
+        <div class="row">  
                     <div class="container">                   
                     <div class="d-flex justify-content-between bd-highlight mb-3 border-2 border-highlight border-bottom align-items-center" >
-                            <h3 class="ms-4">Students List </h3>
-                            <div class="p-2 bd-highlight d-flex align-items-center  "> 
+                            <h3 class="ms-4">Students List</h3>
+                            <div class="p-2 bd-highlight d-flex align-items-center"> 
                                 <i class="fal fa-sort me-3 fs-5 text-info" ></i>
                                 <button type="button" class="btn btn-info btn-sm text-white">ADD NEW STUDENT</button>
                             </div>
                     </div >
-                
-                    <div class="table-responsive px-4">
-        <table class="table table-borderless align-middle "style="border-collapse:separate;border-spacing:0 15px;">
-                          
-                         
-
-
-
-
-
+      <div class="table-responsive px-4">
+        <table class="table table-borderless align-middle"style="border-collapse:separate;border-spacing:0 15px;">
             <?php  
                     for($i=0;$i<7;$i++){
-
-                    $persones[]=	
-
+                        $persones[]=	
                         array(
-                        'image'             =>  '<img src="https://picsum.photos/60.jpg" class=" rounded-circle   "  alt="...">',
-                        'Name'              =>  'username',
-                        'Email'             =>  'user@email.com',
-                        'Phone'             =>  '7305477760',
-                        'Enroll Number'     =>  '1234567305477760',
-                        'Date of admission' =>  '08-Dec, 2021',
-                        
-
+                            'image'             =>'60.jpg',
+                            'Name'              =>'username',
+                            'Email'             =>'user@email.com',
+                            'Phone'             =>'7305477760',
+                            'Enroll Number'     =>'1234567305477760',
+                            'Date of admission' =>'08-Dec, 2021',
                         );
-                    }
-                    
+                    } 
             ?>
-                        <tr style="color:#ACACAC;font-size:12px;" >
-                                <td>  </td>
-                                <td>Name</td>
-                                <td>Email</td>
-                                <td>Phone</td>
-                                <td>Enroll Number</td>
-                                <td>Date of admission</td>
-                                <td>  </td>
-                                <td>  </td>
-
-                            
-                            </tr>
-                        
+                        <tr style="color:#ACACAC;font-size:12px;">
+                            <td>  </td>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Phone</td>
+                            <td>Enroll Number</td>
+                            <td class="text-nowrap">Date of admission</td>
+                            <td>  </td>
+                            <td>  </td>
+                        </tr>
                 <?php                
-                    
                     foreach($persones as $p){
                 ?>
                             <tr class="bg-white">
-                                <td> <?php echo $p['image'];?></td>
-                                <td> <?php echo $p['Name'];?></td>
-                                <td> <?php echo $p['Email'];?></td>
-                                <td> <?php echo $p['Phone'];?></td>
-                                <td> <?php echo $p['Enroll Number'];?></td>
-                                <td> <?php echo $p['Date of admission'];?></td>
+                                <td> <img src="https://picsum.photos/<?php echo $p['image'];?>" class="rounded-circle"  alt="..."></td>
+                                <td class="text-nowrap"><?php echo $p['Name'];?></td>
+                                <td class="text-nowrap"><?php echo $p['Email'];?></td>
+                                <td class="text-nowrap"><?php echo $p['Phone'];?></td>
+                                <td class="text-nowrap"><?php echo $p['Enroll Number'];?></td>
+                                <td class="text-nowrap"><?php echo $p['Date of admission'];?></td>
                                 <td><i class="fal fa-pen fs-5"style="color:#00C1FE;"></i></td>
                                 <td><i class="far fa-trash fs-5" style="color:#00C1FE;"></i></td> 
-                            </tr>     
-                            
+                            </tr>       
                 <?php
                         }
-
                 ?>  
-
         </table>
-      
             </div>
         </div>
 
     </div>
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

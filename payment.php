@@ -10,9 +10,8 @@
     <title>Page-3</title>
 </head>
 <body>
-    
     <div class=" container-fluid bg-light" > 
-    <div class="row flex-nowrap">
+         <div class="row flex-nowrap">
               <?php 
                   include('sidebar.php');
                 ?>
@@ -21,32 +20,20 @@
                   <?php 
                     include('header.php');
                   ?>
-        
-                  <div class="row  ">
-                    
+           <div class="row  ">
                     <div class="container">                   
                     <div class="d-flex justify-content-between bd-highlight mb-3 border-2 border-highlight border-bottom align-items-center" >
-                            <h3 class="ms-4">Students List </h3>
+                            <h3 class="ms-4">Payment Details  </h3>
                             <div class="p-2 bd-highlight d-flex align-items-center  "> 
                                 <i class="fal fa-sort me-3 fs-5 text-info" ></i>
                                 <button type="button" class="btn btn-info btn-sm text-white">ADD NEW STUDENT</button>
                             </div>
                     </div >
-                
-                    <div class="table-responsive px-4">
+    <div class="table-responsive px-4">
         <table class="table table-borderless align-middle "style="border-collapse:separate;border-spacing:0 15px;">
-                          
-                         
-
-
-
-
-
             <?php  
                     for($i=0;$i<4;$i++){
-
                     $persones[]=	
-
                         array(
                         'Name'              =>  'Karthi',
                         'Payment Schedule'  =>  'First',
@@ -54,52 +41,40 @@
                         'Amount Paid'       =>  'DHS 100,000',
                         'Balance amount'    =>  'DHS 500,000',
                         'Date'              =>  '05-Jan, 2022',
-
                         );
                     }
-                    
             ?>
                         <tr style="color:#ACACAC;font-size:12px;" >
-                                <td>Name</td>
-                                <td>Payment Schedule</td>
-                                <td>PBill Number</td>
-                                <td>Amount Paid</td>
-                                <td>Balance amount</td>
-                                <td>Date </td>
+                                <td >Name</td>
+                                <td class="text-nowrap">Payment Schedule</td>
+                                <td class="text-nowrap">PBill Number</td>
+                                <td class="text-nowrap">Amount Paid</td>
+                                <td class="text-nowrap">Balance amount</td>
+                                <td >Date </td>
                                 <td>  </td>
-
-                            
-                            </tr>
-                        
+                         </tr>   
                 <?php                
-                    
                     foreach($persones as $p){
                 ?>
                             <tr class="bg-white">
-                                <td> <?php echo $p['Name'];?></td>
-                                <td> <?php echo $p['Payment Schedule'];?></td>
-                                <td> <?php echo $p['Bill Number'];?></td>
-                                <td> <?php echo $p['Amount Paid'];?></td>
-                                <td> <?php echo $p['Balance amount'];?></td>
-                                <td> <?php echo $p['Date'];?></td>
-                                <td><i class="fal fa-eye fs-6 text-info"></i></td>
+                                <td class="text-nowrap"> <?php echo $p['Name'];?></td>
+                                <td class="text-nowrap"> <?php echo $p['Payment Schedule'];?></td>
+                                <td class="text-nowrap"> <?php echo $p['Bill Number'];?></td>
+                                <td class="text-nowrap"> <?php echo $p['Amount Paid'];?></td>
+                                <td class="text-nowrap"> <?php echo $p['Balance amount'];?></td>
+                                <td class="text-nowrap"> <?php echo $p['Date'];?></td>
+                                <td class="text-nowrap"><i class="fal fa-eye fs-6 text-info"></i></td>
                                  
                             </tr>     
-                            
                 <?php
-                        }
-
+                       }
                 ?>  
-
         </table>
-      
             </div>
         </div>
 
+      </div>
     </div>
-    </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

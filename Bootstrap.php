@@ -33,7 +33,7 @@
                 <input type="text" class="form-control" id="pass" placeholder="Enter your passeword">
             </div>
             <div class="d-grid ">
-                <button class="btn btn-info" style="color:white" type="button"><a  class="btn btn-info" style="color:white"  href="indexhtml.php">SIGN IN</button></a>
+               <a  class="btn btn-info" style="color:white"  href="indexhtml.php"> <button class="btn btn-info" style="color:white" type="button">SIGN IN</button></a>
             </div>
             <div class="text-center mt-4 pb-5" >
               <span >Forgot your password?</span><a href="#" class="stretched-link text-info" style="position: relative;"> Reset Password</a>
